@@ -5,23 +5,28 @@ public class MarsRover {
     public int y = 0;
     public String direction = "N";
 
-
     public void move(String command) {
         if (command == "f") {
             {
                 if (this.direction == "N") {
-                    y += 1;
+                    y++;
                 } else if (this.direction == "S") {
-                    y -= 1;
+                    y--;
                 } else if (this.direction == "E") {
-                    x += 1;
+                    x++;
                 } else if (this.direction == "W") {
-                    x -= 1;
+                    x--;
                 }
             }
         } else if (command == "b") {
             if (this.direction == "N") {
-                y -= 1;
+                y--;
+            }
+        } else if (command == "l") {
+            if (this.direction == "S") {
+                this.direction = "E";
+            } else {
+                this.direction = "W";
             }
         }
     }

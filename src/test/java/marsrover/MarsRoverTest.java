@@ -85,4 +85,25 @@ public class MarsRoverTest {
         assertThat(marsrover.y, is(0));
         assertThat(marsrover.direction, is("N"));
     }
+
+    @Test
+    public void receives_l_when_pointing_north_then_point_west() {
+        MarsRover marsrover = new MarsRover();
+        marsrover.move("l");
+
+        assertThat(marsrover.x, is(0));
+        assertThat(marsrover.y, is(0));
+        assertThat(marsrover.direction, is("W"));
+    }
+
+    @Test
+    public void receives_l_when_pointing_south_then_point_east() {
+        MarsRover marsrover = new MarsRover();
+        marsrover.origin(0,0,"S");
+        marsrover.move("l");
+
+        assertThat(marsrover.x, is(0));
+        assertThat(marsrover.y, is(0));
+        assertThat(marsrover.direction, is("E"));
+    }
 }
