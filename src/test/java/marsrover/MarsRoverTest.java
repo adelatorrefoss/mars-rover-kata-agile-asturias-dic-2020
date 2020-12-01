@@ -75,4 +75,14 @@ public class MarsRoverTest {
         assertThat(marsrover.x, is(0));
         assertThat(marsrover.y, is(-1));
     }
+
+    @Test
+    public void receives_x_do_nothing() {
+        MarsRover marsrover = new MarsRover();
+        marsrover.move("x");
+
+        assertThat(marsrover.x, is(0));
+        assertThat(marsrover.y, is(0));
+        assertThat(marsrover.direction, is("N"));
+    }
 }
