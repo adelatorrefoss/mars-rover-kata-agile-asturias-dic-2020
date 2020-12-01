@@ -7,12 +7,14 @@ public class MarsRover {
 
 
     public void move(String command) {
-        if (this.direction == "S") {
+        if (this.direction == "N") {
+            y += 1;
+        } else if (this.direction == "S") {
             y -= 1;
         } else if (this.direction == "E") {
             x += 1;
-        } else {
-            y += 1;
+        } else if (this.direction == "W") {
+            x -= 1;
         }
     }
 
