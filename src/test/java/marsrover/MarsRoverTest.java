@@ -9,7 +9,11 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class MarsRoverTest {
 
     @Test
-    public void test_works() {
-        assertThat(true, is(false));
+    public void receives_f_when_pointing_north_then_moves_forward() {
+        MarsRover marsrover = new MarsRover(); 
+        marsrover.move("N", "f");
+
+        assertThat(marsrover.x, is(0));
+        assertThat(marsrover.y, is(1));
     }
 }
