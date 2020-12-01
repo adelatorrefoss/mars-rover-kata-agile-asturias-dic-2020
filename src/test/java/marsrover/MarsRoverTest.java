@@ -18,9 +18,19 @@ public class MarsRoverTest {
     }
 
     @Test
+    public void receives_f_when_pointing_east_then_moves_forward() {
+        MarsRover marsrover = new MarsRover();
+        marsrover.origin(0, 0, "E");
+        marsrover.move("f");
+
+        assertThat(marsrover.x, is(1));
+        assertThat(marsrover.y, is(0));
+    }
+
+    @Test
     public void receives_f_when_pointing_south_then_moves_forward() {
         MarsRover marsrover = new MarsRover();
-        marsrover.direction = "S";
+        marsrover.origin(0, 0, "S");
         marsrover.move("f");
 
         assertThat(marsrover.x, is(0));
