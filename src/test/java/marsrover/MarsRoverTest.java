@@ -66,4 +66,13 @@ public class MarsRoverTest {
         assertThat(marsrover.x, is(0));
         assertThat(marsrover.y, is(2));
     }
+
+    @Test
+    public void receives_b_when_pointing_north_then_moves_backwards() {
+        MarsRover marsrover = new MarsRover();
+        marsrover.move("b");
+
+        assertThat(marsrover.x, is(0));
+        assertThat(marsrover.y, is(-1));
+    }
 }
