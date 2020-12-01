@@ -6,9 +6,14 @@ public class MarsRover {
 
     public void move(String direction, String command) {
         if (direction == "S") {
-            y = -1;
+            y -=1;
         } else {
-            y = 1;
+            y += 1;
         }
+    }
+
+    public void origin(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
 }
