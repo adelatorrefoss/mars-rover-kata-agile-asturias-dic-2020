@@ -1,7 +1,22 @@
-# Bootstrap for Katas based on Java
+# Mars Rover implementation exercise
 
-This project has a configured and working pom.xml with all necessary to start a simple java kata.
+### Description
+In this exercise we'll implement from scratch part of the Mars Rover kata.
 
-Import in your favorite IDE and run that failing test to see that all is working smoothly.
+This is a summary of the behavior of the rover that we'll implement:
 
-Based [Luis Rovirosa's work](https://github.com/luisrovirosa/katas-java/tree/master/fizz-buzz).
+- It's located on a grid at some point with coordinates (x,y) and facing a direction encoded with a character.
+
+- The meaning of each direction character is:
+
+    * ``N`` -> North
+    * ``S`` -> South
+    * ``E`` -> East
+    * ``W`` -> West
+
+- The rover receives a sequence of commands (a string of characters) which are codified in the following way:
+
+    * When it receives an ``f``, it moves forward one position in the direction it is facing.
+    * When it receives a ``b``, it moves backward one position in the direction it is facing.
+    * When it receives a ``l``, it turns left changing its direction (by one step in the direction).
+    * When it receives a ``r``, it turns right changing its direction (by one step in the direction).

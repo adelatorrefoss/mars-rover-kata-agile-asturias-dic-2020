@@ -1,4 +1,4 @@
-package changeme;
+package marsrover;
 
 
 import org.junit.Test;
@@ -6,7 +6,7 @@ import org.junit.Test;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class ChangeMeTest {
+public class MarsRoverTest {
 
     @Test
     public void test_works() {
