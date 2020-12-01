@@ -3,7 +3,7 @@ package marsrover;
 public class MarsRover {
     public int x = 0;
     public int y = 0;
-    public String direction = "N";
+    private String direction = "N";
 
 
     public void move(String command) {
