@@ -5,6 +5,10 @@ public class MarsRover {
     public int y = 0;
 
     public void move(String direction, String command) {
-        y = 1;
+        if (direction == "S") {
+            y = -1;
+        } else {
+            y = 1;
+        }
     }
 }
